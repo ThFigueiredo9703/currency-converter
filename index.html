@@ -13,7 +13,7 @@
     <div class="container">
         <header>
             <h1>Conversor de Moedas</h1>
-            <p>Converta valores entre diferentes moedas em tempo real</p>
+            <p>Selecione a moeda desejada para converter</p>
         </header>
 
         <main class="converter">
@@ -35,13 +35,6 @@
                     </select>
                 </div>
 
-                <button id="swap-currencies" class="swap-btn" title="Inverter moeda">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                </button>
-
                 <div class="currency-to">
                     <label for="to-currency">Para:</label>
                     <select id="to-currency">
@@ -58,9 +51,10 @@
             <button id="convert-btn" class="convert-btn">Converter</button>
 
             <div id="result" class="result">
-                <p id="conversion-text">Resultado aparecerá aqui</p>
+                <h2 id="conversion-text"></h2>
                 <div id="conversion-details" class="conversion-details">
                 </div>
+                <div class="conversion-date"></div>
             </div>
         </main>
 
